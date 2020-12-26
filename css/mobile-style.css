@@ -1,6 +1,7 @@
 @media only screen and(max-width: 768px) {
     header .navbar-brand {
-        padding-left: 1rem;
+        padding-left: 0 !important;
+        transition: all .5s;
     }
 
     .section-1 .row .col-md-6 {
@@ -49,24 +50,31 @@
         flex-direction: column;
         align-content: center;
     }
-    .section-4 .carousel-inner{
+
+    .section-4 .carousel-inner {
         width: 24rem;
     }
 }
+
 @media only screen and(max-width: 425px) {
-    footer .row .col-md-2{
+    footer .row .col-md-2 {
         margin-top: 8vmin;
     }
-}   
+}
+
 @media only screen and(max-width: 320px) {
-    .section-4 .card{
+    header .navbar-brand {
+        padding: 0 !important;
+    }
+
+    .section-4 .card {
         width: 18rem;
 
     }
-    .section-4 .carousel-inner{
+
+    .section-4 .carousel-inner {
         text-align: center;
         margin-left: -14vmin;
-        
-    }
-}   
 
+    }
+}

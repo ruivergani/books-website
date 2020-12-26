@@ -48,6 +48,22 @@ No media query since the xxl breakpoint has no upper bound on its width
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
 }
 
 header,
@@ -56,7 +72,7 @@ section {
     /* hide all the left/right space for it */
 }
 
-/* VARIABLES */
+/* ======== VARIABLES ========== */
 :root {
     --Snigle-font: "Sniglet", cursive;
     /* creating variable */
@@ -68,7 +84,7 @@ section {
     --light-gray: rgba(255, 255, 255, 0.5)
 }
 
-/* HEADER */
+/* ======== HEADER ============ */
 .header {
     font-family: var(--Lobster);
     /* call the variable in html */
@@ -85,32 +101,53 @@ header a {
     color: whitesmoke;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 160px;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+/* ============ dropdown only desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .dropdown-toggle::after {
+        margin-left: 8px;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: black;
+        transition: all .5s;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+/* ============ desktop view .end// ============ */
 
 .dropdown:hover .dropdown-content {
     display: block;
+    transition: all .5s;
 }
 
 header .nav-item:last-child {
-    padding-right: 9em;
+    padding-right: 7em;
     /* relative units: em, rem, vmin */
 }
 
@@ -120,12 +157,28 @@ header .nav-item {
 }
 
 header .navbar-brand {
-    padding-left: 8rem;
+    padding-left: 7em;
+    transition: all .5s;
+}
+
+header .navbar .navbar-brand:hover {
+    color: black;
+    transition: all .5s;
+}
+
+header .nav-link {
+    transition: all .5s;
+    text-transform: uppercase;
 }
 
 header .nav-link:hover {
     color: black;
+    transition: all .5s;
+}
 
+.active {
+    color: black;
+    transition: all .5s;
 }
 
 header .nav-link {
@@ -411,4 +464,99 @@ footer .column i+i {
     background-color: rgba(0, 0, 0, 0.815);
     z-index: 99999;
     transition: all 1.5s ease-in-out;
+}
+
+/* ========= BREAKPOINTS ========== */
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        padding: 1rem 2rem;
+        font-size: 4rem;
+    }
+
+    header .navbar-brand {
+        padding-left: 0px !important;
+        font-size: 0.4em;
+    }
+
+    header .navbar-brand a i {
+        font-size: 0.4em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .section-1 .row .col-md-6 {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-2 .cover {
+        background-position: -25vmin -10vmin;
+
+    }
+
+    .numbers .rect {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .numbers .rect h1 {
+        font-size: 2rem;
+    }
+
+    .section-3 {
+        height: inherit;
+        padding: 10vmin !important;
+    }
+
+    .section-3 .row h1 {
+        padding: 6vmin 4vmin;
+    }
+
+    .section-3 .row .col-md-6 {
+        text-align: center !important;
+    }
+
+    .section-3 .desktop i {
+        font-size: 8vmin;
+    }
+
+    .section-4 .carousel-item {
+        padding-left: 0.6rem;
+    }
+
+    .section-4 .team {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section-4 .carousel-inner {
+        width: 24rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    footer .row .col-md-2 {
+        margin-top: 8vmin;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header .navbar-brand {
+        padding-left: 0 !important;
+    }
+
+    .section-4 .card {
+        width: 18rem;
+
+    }
+
+    .section-4 .carousel-inner {
+        text-align: center;
+        margin-left: -14vmin;
+
+    }
 }
