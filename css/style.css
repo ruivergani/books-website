@@ -483,6 +483,15 @@ footer .column i+i {
         font-size: 0.4em;
     }
 }
+@media only screen and (min-width : 992px) and (max-width : 1440px) {
+    header .nav-item:last-child {
+        padding-right: 2em;
+    }
+    header .navbar-brand {
+        padding-left: 2em;
+        transition: all .5s;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
