@@ -206,7 +206,7 @@ header .container .col-md-7 h6 {
 }
 
 header .container .col-md-7 h1 {
-    font-size: 8vmin;
+    font-size: 5vmin;
     font-weight: bold;
     padding: 0.1em 0em;
 }
@@ -219,6 +219,7 @@ header .container .col-md-7 button {
     border-radius: 30px;
     font-weight: bold;
 }
+
 
 /* ====  SECTION 1 ====== */
 .section-1 {
@@ -467,11 +468,33 @@ footer .column i+i {
 }
 
 /* ========= BREAKPOINTS ========== */
+@media only screen and (max-width: 320px) {
+    header .navbar-brand {
+        padding-left: 0 !important;
+    }
+    .section-4 .card {
+        width: 18rem;
+    }
+    .section-4 .carousel-inner {
+        text-align: center;
+        margin-left: -14vmin;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    footer .row .col-md-2 {
+        margin-top: 8vmin;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .navbar {
         padding: 1rem 2rem;
         font-size: 4rem;
+    }
+
+    .navbar-collapse {
+        margin-top: 1.5em;
     }
 
     header .navbar-brand {
@@ -482,15 +505,60 @@ footer .column i+i {
     header .navbar-brand a i {
         font-size: 0.4em;
     }
+    header .row .col-md-5 {
+        padding: 20vmin 1vmin;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .row .col-md-5 img {
+        padding: 3vmin 1vmin;
+    }
 }
+
 @media only screen and (min-width : 992px) and (max-width : 1440px) {
     header .nav-item:last-child {
         padding-right: 2em;
     }
+
     header .navbar-brand {
         padding-left: 2em;
         transition: all .5s;
     }
+}
+
+@media only screen and (min-width: 992px) {
+    header .row .col-md-5 {
+        padding: 17vmin 1vmin;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .row .col-md-5 img {
+        width: 45vmin;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    header .row .col-md-5 {
+        padding: 19vmin 1vmin;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    header .row .col-md-5 img {
+        width: 16vmax;
+    }
+
+    header .row .col-md-5 {
+        padding: 20vmin 1vmin;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -544,28 +612,5 @@ footer .column i+i {
 
     .section-4 .carousel-inner {
         width: 24rem;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    footer .row .col-md-2 {
-        margin-top: 8vmin;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    header .navbar-brand {
-        padding-left: 0 !important;
-    }
-
-    .section-4 .card {
-        width: 18rem;
-
-    }
-
-    .section-4 .carousel-inner {
-        text-align: center;
-        margin-left: -14vmin;
-
     }
 }
