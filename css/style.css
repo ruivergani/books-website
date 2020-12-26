@@ -53,8 +53,6 @@ No media query since the xxl breakpoint has no upper bound on its width
     font-size: 100%;
     border: none;
     outline: none;
-    font-weight: 300;
-    font-size: 16px;
 }
 
 a {
@@ -91,8 +89,8 @@ section {
 }
 
 header {
-    background: #dd2476;
     background: var(--bggradient);
+    height: 100vh;
 }
 
 header a {
@@ -190,8 +188,8 @@ header .row .col-md-5 {
 }
 
 header .row .col-md-7 {
-    padding: 22vmin 1vmin;
-    padding-bottom: 35vmin;
+    padding: 15vmin 1vmin;
+    padding-bottom: 20vmin;
     font-family: var(--Rubik);
     color: white;
 }
@@ -204,6 +202,7 @@ header .container .col-md-7 h6 {
     padding: 1vmin;
     letter-spacing: 4px;
     font-weight: bold !important;
+    font-size: 3vmin;
 }
 
 header .container .col-md-7 h1 {
@@ -213,12 +212,13 @@ header .container .col-md-7 h1 {
 }
 
 header .container .col-md-7 p {
-    padding: 1vmin 5vmin;
+    padding: 4vmin 5vmin;
+    font-size: 2.5vmin;
 }
 
 header .container .col-md-7 button {
     border-radius: 30px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 
@@ -244,7 +244,7 @@ header .container .col-md-7 button {
     background: white;
     border-radius: 3px;
     text-align: left;
-    padding: 13vmin 5vmin 20vmin 10vmin;
+    padding: 13vmin 5vmin 19vmin 10vmin;
     box-shadow: 0 25px 42px rgba(0, 0, 0, 0.2);
     font-family: var(--Rubik);
     z-index: 1;
@@ -265,7 +265,7 @@ header .container .col-md-7 button {
 .cover {
     width: 100%;
     height: 55vmin;
-    background: url(../assets/pexels-photo-452738.jpeg);
+    background: url(../assets/book-background.jpg);
     background-position: -24rem -19rem;
     background-size: 150%;
     position: relative;
@@ -274,20 +274,22 @@ header .container .col-md-7 button {
 .cover .content {
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
-    padding-top: 19vmin;
+    padding-top: 13vmin;
     width: 100%;
 }
 
-.cover .content>h1 {
+.cover .content h1 {
     font-family: var(--Patua);
-    font-size: 6vmin;
+    font-size: 4.5vmin;
     color: whitesmoke;
 }
 
-.cover .content>p {
+.cover .content p {
     font-family: var(--Rubik);
     color: #e5e5e5;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
+    padding-top: 10px;
+    font-weight: bolder !important;
 }
 
 .numbers .rect {
@@ -299,7 +301,7 @@ header .container .col-md-7 button {
     padding-top: 3.5vmin;
     margin: 1rem;
     border-radius: .5em;
-    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+    box-shadow: 1px 2px 50px 0px rgba(187, 19, 19, 0.24);
 }
 
 .numbers {
@@ -308,11 +310,13 @@ header .container .col-md-7 button {
 
 .numbers .rect h1 {
     font-size: 5rem;
-    color: tomato;
+    background: -webkit-linear-gradient(#dd2476, #ff512f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .numbers .rect p {
-    font-family: var(--Patua);
+    font-family: #dd2476;
 }
 
 .purchase>h1 {
@@ -484,9 +488,19 @@ footer .column i+i {
     }
 }
 
+@media only screen and (max-width: 375px) {
+    .section-1 .row .col-md-6 .panel h1 {
+        font-size: 1.5em;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     footer .row .col-md-2 {
         margin-top: 8vmin;
+    }
+
+    header .row .col-md-5 img {
+        width: 60%;
     }
 }
 
@@ -521,61 +535,32 @@ footer .column i+i {
     }
 }
 
-@media only screen and (min-width : 992px) and (max-width : 1440px) {
-    header .nav-item:last-child {
-        padding-right: 2em;
-    }
-
-    header .navbar-brand {
-        padding-left: 2em;
-        transition: all .5s;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    header .row .col-md-5 {
-        padding: 17vmin 1vmin;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    header .row .col-md-5 img {
-        width: 45vmin;
-    }
-}
-
-@media only screen and (max-width: 1220px) {
-    header .row .col-md-5 {
-        padding: 19vmin 1vmin;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 1220px) {
-    header .row .col-md-5 img {
-        width: 16vmax;
-    }
-
-    header .row .col-md-5 {
-        padding: 20vmin 1vmin;
+@media only screen and (max-width: 767.98px) {
+    .section-1 .row .col-md-6 .panel {
+        position: static;
     }
 
 }
 
 @media only screen and (max-width: 768px) {
-
     .section-1 .row .col-md-6 {
         position: initial;
         width: initial;
         height: initial;
     }
 
-    .section-2 .cover {
-        background-position: -25vmin -10vmin;
+    .section-1 .row .col-md-6 .panel {
+        position: static;
+    }
 
+    .section-2 .cover {
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .cover .content {
+        padding: 10vmin;
     }
 
     .numbers .rect {
@@ -617,4 +602,94 @@ footer .column i+i {
     .section-4 .carousel-inner {
         width: 24rem;
     }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1440px) {
+    .section-1 .row .col-md-6 .panel {
+        padding: 9vmin;
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1440px) {
+    header .nav-item:last-child {
+        padding-right: 2em;
+    }
+
+    header .navbar-brand {
+        padding-left: 2em;
+        transition: all .5s;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    header .row .col-md-5 {
+        padding: 0vmin;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .row .col-md-5 img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-1 .row .col-md-6 .panel h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    header .row .col-md-5 {
+        padding: 0vmin;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-1 .row .col-md-6 {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+}
+
+@media only screen and (min-width: 1220px) {
+    header .row .col-md-5 {
+        padding: 20vmin 1vmin;
+    }
+
+    header .row .col-md-5 img {
+        width: 38vmin;
+    }
+
+    header .row .col-md-7 {
+        padding-top: 20vmin;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    header .row .col-md-5 {
+        padding-top: 10vmin;
+        padding-bottom: 0vmin;
+    }
+}
+
+@media (max-width: 575.98px) {
+    header .row .col-md-5 {
+        padding-top: 0;
+    }
+
+    header .row .col-md-7 {
+        padding-bottom: 0vmin;
+    }
+
+    header .row .col-md-5 img {
+        width: 45%;
+    }
+
 }
