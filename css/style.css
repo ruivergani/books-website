@@ -203,6 +203,7 @@ header .row .col-md-5 img {
 header .container .col-md-7 h6 {
     padding: 1vmin;
     letter-spacing: 4px;
+    font-weight: bold !important;
 }
 
 header .container .col-md-7 h1 {
@@ -472,9 +473,11 @@ footer .column i+i {
     header .navbar-brand {
         padding-left: 0 !important;
     }
+
     .section-4 .card {
         width: 18rem;
     }
+
     .section-4 .carousel-inner {
         text-align: center;
         margin-left: -14vmin;
@@ -505,6 +508,7 @@ footer .column i+i {
     header .navbar-brand a i {
         font-size: 0.4em;
     }
+
     header .row .col-md-5 {
         padding: 20vmin 1vmin;
         align-items: center;
@@ -558,7 +562,7 @@ footer .column i+i {
     header .row .col-md-5 {
         padding: 20vmin 1vmin;
     }
-    
+
 }
 
 @media only screen and (max-width: 768px) {
