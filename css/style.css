@@ -1296,38 +1296,40 @@ footer .column i+i {
 
 }
 @media only screen and (min-width: 1023.98px) {
-    
-h1.text-light{
-    font-size: 23px;;
+    .section-4 .card{
+        margin-top: 10px;
+        width: 19rem;
+    }
+    .section-4 .carousel-item{
+        padding-left: 0em;
+    }
+    h1.text-light{
+        font-size: 23px;;
+    }
+    h4.text-light {
+        font-size: 23px;
+    }
+
+    p.text-muted {
+        text-align: justify;
+    }
+
+    p.pt-4.text-muted {
+        padding-top: 0px !important;
+        text-align: justify;
+    }
+
+    div.input-group.pr-5 {
+        padding-right: 0px !important;
+        margin-bottom: 17px;
+    }
+
+    div.col.pl- {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    footer {
+        padding: 8vmin;
+    }
 }
-h4.text-light {
-    font-size: 23px;
-}
-
-p.text-muted {
-    text-align: justify;
-}
-
-p.pt-4.text-muted {
-    padding-top: 0px !important;
-    text-align: justify;
-}
-
-div.input-group.pr-5 {
-    padding-right: 0px !important;
-    margin-bottom: 17px;
-}
-
-div.col.pl- {
-    padding: 0px;
-    margin: 0px;
-}
-
-footer {
-    padding: 8vmin;
-}
-}
-
-
-
-
