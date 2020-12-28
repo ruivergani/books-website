@@ -533,7 +533,7 @@ footer .column i+i {
     }
     .purchase>h1{
         padding: 20vmin 5vmin 5vmin 5vmin;
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .purchase>p{
         font-size: 5vmin;
@@ -563,10 +563,22 @@ footer .column i+i {
     .section-3 .desktop{
         padding: 3vmin 6vmin;
     }
+    .section-4 .container h1{
+        font-size: 23px;
+    }
+    .text-secondary{
+        padding-top: 10px;
+    }
     .section-4 .card {
         width: 18rem;
     }
-
+    .section-4 .team{
+        padding: 1vmin 3vmin;
+        margin-right: 0px;
+    }
+    .section-4 .team:last-child{
+        margin-bottom: 20px;
+    }
     .section-4 .carousel-inner {
         text-align: center;
         margin-left: -14vmin;
