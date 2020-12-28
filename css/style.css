@@ -473,185 +473,642 @@ footer .column i+i {
 }
 
 /* ========= BREAKPOINTS ========== */
+
+/* === MOBILE PHONE 320PX ===*/
 @media only screen and (max-width: 320px) {
-    header{
+    header {
         height: inherit;
     }
+
     header .navbar-brand {
         padding-left: 0;
     }
-    header .nav-item{
+
+    header .nav-item {
         padding: 0px;
         font-size: 16px;
     }
-    header .container .col-md-7 h6{
+
+    header .container .col-md-7 h6 {
         font-size: 16px;
         margin-top: 5px;
     }
-    header .container .col-md-7 h1{
+
+    header .container .col-md-7 h1 {
         font-size: 23px;
         font-weight: bolder;
     }
-    header .container .col-md-7 p{
+
+    header .container .col-md-7 p {
         font-size: 15px;
-    }
-    .navbar-collapse{
-        margin-top: 5px;
-    }
-    header .navbar{
-        padding: 0.7rem 1rem;
-    }
-    header .row .col-md-7 {
-        padding-top: 0px;
-    }
-    header .row .col-md-5 img {
-        padding: 0vmin 0vmin;
-    }
-    .section-1 .row .col-md-6 .panel{
-        text-align: justify !important;
-        padding: 13vmin 5vmin 13vmin 5vmin;
-    }
-    .section-1 .row .col-md-6 .panel h1{
-        text-align: center;
-    }
-    section-2 .cover{
-        background-repeat: no-repeat;
-        background-position: top;
-    }
-    .cover .content{
-        padding: 8vmin 0vmin !important;
-        height: 29vh;
-    }
-    .cover .content h1{
-        font-size: 20px;
-    }
-    .cover .content p{
-        font-size: 14px;
-    }
-    .numbers{
-        margin-top: 20vmin;
-    }
-    .purchase>h1{
-        padding: 20vmin 5vmin 5vmin 5vmin;
-        font-size: 1.8em;
-    }
-    .purchase>p{
-        font-size: 5vmin;
-    }
-    .cards .title{
-        padding: 1rem 1.5rem;
-    }
-    .card .card-text{
-        padding: 1rem 1rem;
-    }
-    .card-body .pricing>h1{
-        padding: 0.9rem 0.3rem;
-    }
-    .section-3 .row h1{
-        font-size: 23px;
-    }
-    .section-3 .col-md-12>p{
-        font-size: 16px;
-        padding: 0;
-    }
-    .section-3 .desktop h3{
-        font-size: 16px;
-    }
-    .section-3 .desktop p{
-        font-size: 13px;
-    }
-    .section-3 .desktop{
-        padding: 3vmin 6vmin;
-    }
-    .section-4 .container h1{
-        font-size: 23px;
-    }
-    .text-secondary{
-        padding-top: 10px;
-    }
-    .section-4 .card {
-        width: 18rem;
-    }
-    .section-4 .team{
-        padding: 1vmin 3vmin;
-        margin-right: 0px;
-    }
-    .section-4 .team:last-child{
-        margin-bottom: 20px;
-    }
-    h1.text-light{
-        font-size: 23px;
-    }
-    h4.text-light{
-        font-size: 23px;
-    }
-    p.text-muted{
-        text-align: justify;
-    }
-    p.pt-4.text-muted{
-        padding-top: 0px !important;
-        text-align: justify;
-    }
-    div.input-group.pr-5{
-        padding-right: 0px !important;
-    }
-    div.col.pl-{
-        padding: 0px;
-        margin: 0px;
-    }
-    footer{
-        padding: 8vmin;
-    }
-    .section-4 .carousel-inner {
-        text-align: center;
-        margin-left: -14vmin;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .section-1 .row .col-md-6 .panel h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    footer .row .col-md-2 {
-        margin-top: 8vmin;
-    }
-
-    header .row .col-md-5 img {
-        /* width: 60%; */
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .navbar {
-        padding: 1rem 2rem;
-        font-size: 4rem;
     }
 
     .navbar-collapse {
-       /*  margin-top: 1.5em; */
+        margin-top: 5px;
     }
 
-    header .navbar-brand {
-        /* padding-left: 0px !important; */
-        font-size: 0.4em;
+    header .navbar {
+        padding: 0.7rem 1rem;
     }
 
-    header .navbar-brand a i {
-        font-size: 0.4em;
-    }
-
-    header .row .col-md-5 {
-        padding: 20vmin 1vmin;
-        align-items: center;
-        display: flex;
-        justify-content: center;
+    header .row .col-md-7 {
+        padding-top: 0px;
     }
 
     header .row .col-md-5 img {
-       /*  padding: 3vmin 1vmin; */
+        padding: 0vmin 0vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        text-align: justify !important;
+        padding: 13vmin 5vmin 13vmin 5vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel h1 {
+        text-align: center;
+    }
+
+    section-2 .cover {
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .cover .content {
+        padding: 8vmin 0vmin !important;
+        height: 29vh;
+    }
+
+    .cover .content h1 {
+        font-size: 20px;
+    }
+
+    .cover .content p {
+        font-size: 14px;
+    }
+
+    .numbers {
+        margin-top: 20vmin;
+    }
+
+    .purchase>h1 {
+        padding: 20vmin 5vmin 5vmin 5vmin;
+        font-size: 1.8em;
+    }
+
+    .purchase>p {
+        font-size: 5vmin;
+    }
+
+    .cards .title {
+        padding: 1rem 1.5rem;
+    }
+
+    .card .card-text {
+        padding: 1rem 1rem;
+    }
+
+    .card-body .pricing>h1 {
+        padding: 0.9rem 0.3rem;
+    }
+
+    .section-3 .row h1 {
+        font-size: 23px;
+    }
+
+    .section-3 .col-md-12>p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .section-3 .desktop h3 {
+        font-size: 16px;
+    }
+
+    .section-3 .desktop p {
+        font-size: 13px;
+    }
+
+    .section-3 .desktop {
+        padding: 3vmin 6vmin;
+    }
+
+    .section-4 .container h1 {
+        font-size: 23px;
+    }
+
+    .text-secondary {
+        padding-top: 10px;
+    }
+
+    .section-4 .card {
+        width: 18rem;
+    }
+
+    .section-4 .team {
+        padding: 1vmin 3vmin;
+        margin-right: 0px;
+    }
+
+    .section-4 .team:last-child {
+        margin-bottom: 20px;
+    }
+
+    h1.text-light {
+        font-size: 23px;
+    }
+
+    h4.text-light {
+        font-size: 23px;
+    }
+
+    p.text-muted {
+        text-align: justify;
+    }
+
+    p.pt-4.text-muted {
+        padding-top: 0px !important;
+        text-align: justify;
+    }
+
+    div.input-group.pr-5 {
+        padding-right: 0px !important;
+        margin-bottom: 17px;
+    }
+
+    div.col.pl- {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    footer {
+        padding: 8vmin;
+    }
+
+    .section-4 .carousel-inner {
+        text-align: center;
+        margin-left: -21vmin;
+    }
+}
+
+/* === END MOBILE PHONE 320PX ===*/
+
+/* === MOBILE PHONE 375PX ===*/
+@media only screen and (min-width : 320px) and (max-width : 375px) {
+    header {
+        height: inherit;
+    }
+
+    header .navbar-brand {
+        padding-left: 0;
+    }
+
+    header .nav-item {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    header .container .col-md-7 h6 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    header .container .col-md-7 h1 {
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+    header .container .col-md-7 p {
+        font-size: 15px;
+    }
+
+    .navbar-collapse {
+        margin-top: 5px;
+    }
+
+    header .navbar {
+        padding: 0.7rem 1rem;
+    }
+
+    header .row .col-md-7 {
+        padding-top: 0px;
+    }
+
+    header .row .col-md-5 img {
+        padding: 0vmin 0vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        text-align: justify !important;
+        padding: 13vmin 5vmin 13vmin 5vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel h1 {
+        text-align: center;
+    }
+
+    section-2 .cover {
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .cover .content {
+        padding: 12vmin 0vmin !important;
+        height: 30vh;
+    }
+
+    .cover .content h1 {
+        font-size: 20px;
+    }
+
+    .cover .content p {
+        font-size: 14px;
+    }
+
+    .numbers {
+        margin-top: 20vmin;
+    }
+
+    .purchase>h1 {
+        padding: 20vmin 5vmin 5vmin 5vmin;
+        font-size: 1.8em;
+    }
+
+    .purchase>p {
+        font-size: 5vmin;
+    }
+
+    .cards .title {
+        padding: 1rem 1.5rem;
+    }
+
+    .card .card-text {
+        padding: 1rem 1rem;
+    }
+
+    .card-body .pricing>h1 {
+        padding: 0.9rem 0.3rem;
+    }
+
+    .section-3 .row h1 {
+        font-size: 23px;
+    }
+
+    .section-3 .col-md-12>p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .section-3 .desktop h3 {
+        font-size: 16px;
+    }
+
+    .section-3 .desktop p {
+        font-size: 13px;
+    }
+
+    .section-3 .desktop {
+        padding: 3vmin 6vmin;
+    }
+
+    .section-4 .container h1 {
+        font-size: 23px;
+    }
+
+    .text-secondary {
+        padding-top: 10px;
+    }
+
+    .section-4 .card {
+        width: 18rem;
+    }
+
+    .section-4 .team {
+        padding: 1vmin 3vmin;
+        margin-right: 0px;
+    }
+
+    h1.text-light {
+        font-size: 23px;
+    }
+
+    h4.text-light {
+        font-size: 23px;
+    }
+
+    p.text-muted {
+        text-align: justify;
+    }
+
+    p.pt-4.text-muted {
+        padding-top: 0px !important;
+        text-align: justify;
+    }
+
+    div.input-group.pr-5 {
+        padding-right: 0px !important;
+        margin-bottom: 17px;
+    }
+
+    div.col.pl- {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    footer {
+        padding: 8vmin;
+    }
+
+    .section-4 .carousel-inner {
+        text-align: center;
+        margin-left: -17vmin;
+    }
+}
+
+/*=== END MOBILE 375PX ======*/
+
+/* === MOBILE 375PX - 425PX ====*/
+@media only screen and (min-width : 375px) and (max-width : 425px) {
+    header {
+        height: inherit;
+    }
+
+    header .navbar-brand {
+        padding-left: 0;
+    }
+
+    header .nav-item {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    header .container .col-md-7 h6 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    header .container .col-md-7 h1 {
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+    header .container .col-md-7 p {
+        font-size: 15px;
+    }
+
+    .navbar-collapse {
+        margin-top: 5px;
+    }
+
+    header .navbar {
+        padding: 0.7rem 1rem;
+    }
+
+    header .row .col-md-7 {
+        padding-top: 0px;
+    }
+
+    header .row .col-md-5 img {
+        padding: 0vmin 0vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        text-align: justify !important;
+        padding: 13vmin 5vmin 13vmin 5vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel h1 {
+        text-align: center;
+    }
+
+    section-2 .cover {
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .cover .content {
+        padding: 12vmin 0vmin !important;
+        height: 33vh;
+    }
+
+    .cover .content h1 {
+        font-size: 20px;
+    }
+
+    .cover .content p {
+        font-size: 14px;
+    }
+
+    .numbers {
+        margin-top: 20vmin;
+    }
+
+    .purchase>h1 {
+        padding: 20vmin 5vmin 5vmin 5vmin;
+        font-size: 1.8em;
+    }
+
+    .purchase>p {
+        font-size: 5vmin;
+    }
+
+    .cards .title {
+        padding: 1rem 1.5rem;
+    }
+
+    .card .card-text {
+        padding: 1rem 1rem;
+    }
+
+    .card-body .pricing>h1 {
+        padding: 0.9rem 0.3rem;
+    }
+
+    .section-3 .row h1 {
+        font-size: 23px;
+    }
+
+    .section-3 .col-md-12>p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .section-3 .desktop h3 {
+        font-size: 16px;
+    }
+
+    .section-3 .desktop p {
+        font-size: 13px;
+    }
+
+    .section-3 .desktop {
+        padding: 3vmin 6vmin;
+    }
+
+    .section-4 .container h1 {
+        font-size: 23px;
+    }
+
+    .text-secondary {
+        padding-top: 10px;
+    }
+
+    .section-4 .card {
+        width: 18rem;
+    }
+
+    .section-4 .team {
+        padding: 1vmin 3vmin;
+        margin-right: 0px;
+    }
+
+    .section-4 .team:last-child {
+        margin-bottom: 20px;
+        padding-left: 3em;
+    }
+
+    h1.text-light {
+        font-size: 23px;
+    }
+
+    h4.text-light {
+        font-size: 23px;
+    }
+
+    p.text-muted {
+        text-align: justify;
+    }
+
+    p.pt-4.text-muted {
+        padding-top: 0px !important;
+        text-align: justify;
+    }
+
+    div.input-group.pr-5 {
+        padding-right: 0px !important;
+        margin-bottom: 17px;
+    }
+
+    div.col.pl- {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    footer {
+        padding: 8vmin;
+    }
+
+    .section-4 .carousel-inner {
+        text-align: center;
+        margin-left: -15vmin;
+    }
+
+}
+
+/* === END OF MOBILE APPLICATIONS ===*/
+@media only screen and (min-width: 767.98px) and (max-width: 992px) {
+    header .navbar-brand {
+        padding-left: 0em !important;
+    }
+    header {
+        height: inherit;
+    }
+
+    header .navbar-brand {
+        padding-left: 0;
+    }
+
+    header .nav-item {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    header .container .col-md-7 h6 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    header .container .col-md-7 h1 {
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+    header .container .col-md-7 p {
+        font-size: 15px;
+    }
+
+    .navbar-collapse {
+        margin-top: 5px;
+    }
+
+    header .navbar {
+        padding: 0.7rem 1rem;
+    }
+    .section-1 .row .col-md-6 .panel{
+        padding: 5vmin !important;
+    }
+    .section-1 .row .col-md-6 .panel {
+        text-align: justify !important;
+        padding: 6vmin 3vmin 6vmin 3vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel h1 {
+        text-align: left;
+    }
+    .cards .title {
+        padding: 1rem 1.5rem;
+    }
+    .purchase .cards .card{
+        margin: 1vmin;
+    }
+    .card-body .princing>h1{
+        font-size: 5vmin !important;
+    }
+    .card .card-text {
+        padding: 1rem 1rem;
+    }
+
+    .card-body .pricing>h1 {
+        padding: 0.9rem 0.3rem;
+        font-size: 5vmin !important;
+    }
+    .section-4 .card{
+        margin-top: 10px;
+        width: 20rem;
+        margin-left: -5em;
+    }
+    .section-4 .carousel-inner {
+        text-align: center;
+        margin-left: -13vmin;
+        width: 25rem;
+    }
+    h1.text-light{
+        font-size: 23px;;
+    }
+    h4.text-light {
+        font-size: 23px;
+    }
+
+    p.text-muted {
+        text-align: justify;
+    }
+
+    p.pt-4.text-muted {
+        padding-top: 0px !important;
+        text-align: justify;
+    }
+
+    div.input-group.pr-5 {
+        padding-right: 0px !important;
+        margin-bottom: 17px;
+    }
+
+    div.col.pl- {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    footer {
+        padding: 8vmin;
     }
 }
 
@@ -674,7 +1131,7 @@ footer .column i+i {
     }
 
     .section-2 .cover {
-       /* height: 60vh; */
+        /* height: 60vh; */
         background-repeat: no-repeat;
         background-position: top;
     }
@@ -709,10 +1166,6 @@ footer .column i+i {
         font-size: 8vmin;
     }
 
-    .section-4 .carousel-item {
-        padding-left: 0.6rem;
-    }
-
     .section-4 .team {
         display: flex;
         flex-direction: column;
@@ -724,11 +1177,41 @@ footer .column i+i {
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .navbar {
+        padding: 1rem 2rem;
+        font-size: 4rem;
+    }
+
+    .navbar-collapse {
+        /*  margin-top: 1.5em; */
+    }
+
+    header .navbar-brand {
+        /* padding-left: 0px !important; */
+        font-size: 0.4em;
+    }
+
+    header .navbar-brand a i {
+        font-size: 0.4em;
+    }
+
+    header .row .col-md-5 {
+        /*  padding: 20vmin 1vmin; */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .row .col-md-5 img {
+        /*  padding: 3vmin 1vmin; */
+    }
+}
+
 @media only screen and (min-width : 768px) and (max-width : 1440px) {
     .section-1 .row .col-md-6 .panel {
         padding: 9vmin;
     }
-
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1440px) {
@@ -737,10 +1220,9 @@ footer .column i+i {
     }
 
     header .navbar-brand {
-        padding-left: 2em;
+        /*  padding-left: 2em; */
         transition: all .5s;
     }
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -813,3 +1295,39 @@ footer .column i+i {
     }
 
 }
+@media only screen and (min-width: 1023.98px) {
+    
+h1.text-light{
+    font-size: 23px;;
+}
+h4.text-light {
+    font-size: 23px;
+}
+
+p.text-muted {
+    text-align: justify;
+}
+
+p.pt-4.text-muted {
+    padding-top: 0px !important;
+    text-align: justify;
+}
+
+div.input-group.pr-5 {
+    padding-right: 0px !important;
+    margin-bottom: 17px;
+}
+
+div.col.pl- {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    padding: 8vmin;
+}
+}
+
+
+
+
